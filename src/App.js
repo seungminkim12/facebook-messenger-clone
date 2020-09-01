@@ -43,7 +43,7 @@ function App() {
             type="submit"
             onClick={sendMessage}
           >
-            Send Message
+            Send Messag
           </Button>
         </FormControl>
       </form>
