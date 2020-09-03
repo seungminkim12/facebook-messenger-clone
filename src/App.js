@@ -5,7 +5,9 @@ import Message from "./Message";
 
 function App() {
   const [input, setInput] = useState("");
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    { username: "zi", text: "HIIIII" },
+  ]);
   const [username, setUsername] = useState("");
 
   // useState = variable in REACT
@@ -52,7 +54,7 @@ function App() {
 
       {/* messages themselves */}
       {messages.map((message) => (
-        <Message username={message.username} text={message.text} />
+        <Message username={username} message={message} />
       ))}
     </div>
   );
