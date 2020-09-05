@@ -6,9 +6,7 @@ import db from "./Firebase";
 
 function App() {
   const [input, setInput] = useState("");
-  const [messages, setMessages] = useState([
-    { username: "zi", message: "HIIIII" },
-  ]);
+  const [messages, setMessages] = useState([]);
   const [username, setUsername] = useState("");
 
   // useState = variable in REACT
